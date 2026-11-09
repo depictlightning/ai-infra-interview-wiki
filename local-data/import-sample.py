@@ -4,7 +4,7 @@ from pathlib import Path
 root = Path(__file__).resolve().parent
 metadata = json.loads((root / 'sample-metadata.json').read_text(encoding='utf-8'))
 company_categories = {
-    '字节跳动': 'T0 大厂', '腾讯': 'T0 大厂',
+    '字节跳动': 'T0 大厂', '腾讯': 'T0 大厂', '阿里巴巴': 'T0 大厂', '百度': 'T0 大厂',
     '拼多多': 'T1 大厂 / 独角兽',
     '月之暗面': 'T2 AI 独角兽',
     '百度昆仑芯': 'T3 芯片 / 硬件', '清微智能': 'T3 芯片 / 硬件',
