@@ -1,0 +1,142 @@
+[
+  {
+    "id": "xhs-6abe3c67000000001802a6f0",
+    "category": "AI Infra 面经",
+    "company": "月之暗面",
+    "role": "算子与推理 Infra",
+    "stage": "一面",
+    "date": "2026-10-01",
+    "type": "真实面经整理",
+    "source": "https://www.xiaohongshu.com/explore/6abe3c67000000001802a6f0",
+    "tags": [
+      "算子",
+      "并行"
+    ]
+  },
+  {
+    "id": "xhs-6a6b6aee0000000005022bc0",
+    "category": "AI Infra 面经",
+    "company": "字节跳动",
+    "role": "芯片部门 · 训练 Infra",
+    "stage": "一面",
+    "date": "2026-07-30",
+    "type": "真实面经整理",
+    "source": "https://www.xiaohongshu.com/explore/6a6b6aee0000000005022bc0",
+    "tags": [
+      "分布式训练",
+      "通信"
+    ]
+  },
+  {
+    "id": "xhs-67b6d6b0000000002a00deae",
+    "category": "AI Infra 面经",
+    "company": "百度昆仑芯",
+    "role": "大模型推理框架开发",
+    "stage": "二面",
+    "date": "2025-02-20",
+    "type": "真实面经整理",
+    "source": "https://www.xiaohongshu.com/explore/67b6d6b0000000002a00deae",
+    "tags": [
+      "GPU",
+      "推理"
+    ]
+  },
+  {
+    "id": "xhs-6a919993000000002c03ef3a",
+    "category": "AI Infra 面经",
+    "company": "字节跳动",
+    "role": "AI Infra",
+    "stage": "一面",
+    "date": "2026-08-28",
+    "type": "真实面经整理",
+    "source": "https://www.xiaohongshu.com/explore/6a919993000000002c03ef3a",
+    "tags": [
+      "算子",
+      "并行"
+    ]
+  },
+  {
+    "id": "xhs-6a50bae7000000000803e7a3",
+    "category": "AI Infra 面经",
+    "company": "腾讯",
+    "role": "混元青云 · AI Infra",
+    "stage": "一面",
+    "date": "2026-07-10",
+    "type": "真实面经整理",
+    "source": "https://www.xiaohongshu.com/explore/6a50bae7000000000803e7a3",
+    "tags": [
+      "GPU",
+      "算子"
+    ]
+  },
+  {
+    "id": "nowcoder-f6699e9cec7f495597b68d82e6f1a0ea",
+    "category": "AI Infra 面经",
+    "company": "蔚来",
+    "role": "AI Infra 测试工程师",
+    "stage": "一面",
+    "date": "2026-11-05",
+    "type": "候选人面经",
+    "source": "https://www.nowcoder.com/feed/main/detail/f6699e9cec7f495597b68d82e6f1a0ea",
+    "tags": [
+      "AI Infra",
+      "测试"
+    ]
+  },
+  {
+    "id": "nowcoder-945709685955395584",
+    "category": "AI Infra 面经",
+    "company": "小鹏",
+    "role": "深度学习平台研发工程师",
+    "stage": "轮次未注明",
+    "date": "2026-10-30",
+    "type": "候选人面经",
+    "source": "https://www.nowcoder.com/discuss/945709685955395584",
+    "tags": [
+      "平台",
+      "分布式训练"
+    ]
+  },
+  {
+    "id": "nowcoder-8566c06947a0424396d9ee48e71f10b5",
+    "category": "AI Infra 面经",
+    "company": "拼多多",
+    "role": "AI Infra",
+    "stage": "一面",
+    "date": "2026-10-28",
+    "type": "候选人面经",
+    "source": "https://www.nowcoder.com/feed/main/detail/8566c06947a0424396d9ee48e71f10b5",
+    "tags": [
+      "算子",
+      "GPU"
+    ]
+  },
+  {
+    "id": "nowcoder-944964515630768128",
+    "category": "AI Infra 面经",
+    "company": "清微智能",
+    "role": "AI 应用软件开发（偏编译器）",
+    "stage": "一面、二面",
+    "date": "2026-10-28",
+    "type": "候选人面经",
+    "source": "https://www.nowcoder.com/discuss/944964515630768128",
+    "tags": [
+      "推理",
+      "编译器"
+    ]
+  },
+  {
+    "id": "nowcoder-e30ca62858b840ba8d825877611a9bba",
+    "category": "AI Infra 面经",
+    "company": "公司未注明",
+    "role": "AI Infra",
+    "stage": "一面",
+    "date": "2026-10-28",
+    "type": "候选人面经",
+    "source": "https://www.nowcoder.com/feed/main/detail/e30ca62858b840ba8d825877611a9bba",
+    "tags": [
+      "推理",
+      "部署"
+    ]
+  }
+]
