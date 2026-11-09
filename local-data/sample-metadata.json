@@ -25,7 +25,8 @@
     "tags": [
       "分布式训练",
       "通信"
-    ]
+    ],
+    "source_title": "字节芯片部门一面（AI infra 训练相关）"
   },
   {
     "id": "xhs-67b6d6b0000000002a00deae",
@@ -53,7 +54,8 @@
     "tags": [
       "算子",
       "并行"
-    ]
+    ],
+    "source_title": "字节ai infra 一面"
   },
   {
     "id": "xhs-6a50bae7000000000803e7a3",
@@ -67,7 +69,8 @@
     "tags": [
       "GPU",
       "算子"
-    ]
+    ],
+    "source_title": "AI Infra | 面经| 腾讯混元青云"
   },
   {
     "id": "nowcoder-f6699e9cec7f495597b68d82e6f1a0ea",
@@ -150,7 +153,8 @@
     "source": "https://www.xiaohongshu.com/explore/69a2fbe0000000001a02d7a5",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "ai infra字节二面面经"
   },
   {
     "id": "xhs-6a464a880000000008001b89",
@@ -163,7 +167,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a464a880000000008001b89",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "ai Infra 面经 | 字节 | 约备面 （下）"
   },
   {
     "id": "xhs-6ab2030c0000000031003353",
@@ -176,7 +181,8 @@
     "source": "https://www.xiaohongshu.com/explore/6ab2030c0000000031003353",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "字节 ai infra 一面"
   },
   {
     "id": "xhs-6aaf4f930000000029018309",
@@ -189,7 +195,8 @@
     "source": "https://www.xiaohongshu.com/explore/6aaf4f930000000029018309",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "字节 ai infra 一面"
   },
   {
     "id": "xhs-6ae9a64d0000000016005888",
@@ -202,7 +209,8 @@
     "source": "https://www.xiaohongshu.com/explore/6ae9a64d0000000016005888",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "字节ai infra 三面"
   },
   {
     "id": "xhs-6ac65d920000000018004d3c",
@@ -215,7 +223,8 @@
     "source": "https://www.xiaohongshu.com/explore/6ac65d920000000018004d3c",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "字节 AI INFRA 三面复盘"
   },
   {
     "id": "xhs-6a4239b2000000000803e322",
@@ -228,7 +237,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a4239b2000000000803e322",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "腾讯infra一面面经"
   },
   {
     "id": "xhs-6ac9adf1000000001500368b",
@@ -241,7 +251,8 @@
     "source": "https://www.xiaohongshu.com/explore/6ac9adf1000000001500368b",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "腾讯混元ai infra 二面（1）"
   },
   {
     "id": "xhs-6a66188b000000000401f0f2",
@@ -254,7 +265,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a66188b000000000401f0f2",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "腾讯混元Ai infra"
   },
   {
     "id": "xhs-6ac38391000000001b01e2e5",
@@ -267,7 +279,8 @@
     "source": "https://www.xiaohongshu.com/explore/6ac38391000000001b01e2e5",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "腾讯混元AI infra部门一面"
   },
   {
     "id": "xhs-6ac3a198000000001b0313c8",
@@ -280,7 +293,8 @@
     "source": "https://www.xiaohongshu.com/explore/6ac3a198000000001b0313c8",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "腾讯AI infra部门二面"
   },
   {
     "id": "xhs-6a6efa530000000028005c8c",
@@ -293,7 +307,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a6efa530000000028005c8c",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "腾讯游戏 ai infra 训练框架一面"
   },
   {
     "id": "xhs-696b0d9d000000000e00ecf9",
@@ -306,7 +321,8 @@
     "source": "https://www.xiaohongshu.com/explore/696b0d9d000000000e00ecf9",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "阿里国际ai infra面（凉）经"
   },
   {
     "id": "xhs-6a9c3de3000000002502ecf9",
@@ -319,7 +335,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a9c3de3000000002502ecf9",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "阿里 ai infra 二面复盘"
   },
   {
     "id": "xhs-6aa3ff60000000002901aab6",
@@ -332,7 +349,8 @@
     "source": "https://www.xiaohongshu.com/explore/6aa3ff60000000002901aab6",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "阿里妈妈ai infra一面"
   },
   {
     "id": "xhs-6ad99bac000000002c010b80",
@@ -345,7 +363,8 @@
     "source": "https://www.xiaohongshu.com/explore/6ad99bac000000002c010b80",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "阿里巴巴 ai infra 一面面经（总结扩展版）"
   },
   {
     "id": "xhs-6a30c6f20000000020039533",
@@ -358,7 +377,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a30c6f20000000020039533",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "百度infra一二面面经"
   },
   {
     "id": "xhs-6a700d7400000000350155ba",
@@ -371,7 +391,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a700d7400000000350155ba",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "百度ai infra一面"
   },
   {
     "id": "xhs-6a92ecb70000000007004c9a",
@@ -384,7 +405,8 @@
     "source": "https://www.xiaohongshu.com/explore/6a92ecb70000000007004c9a",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "百度 ai infra 一面复盘"
   },
   {
     "id": "xhs-6abf5b2f0000000015011d00",
@@ -397,6 +419,7 @@
     "source": "https://www.xiaohongshu.com/explore/6abf5b2f0000000015011d00",
     "tags": [
       "AI Infra"
-    ]
+    ],
+    "source_title": "百度ai infra一面"
   }
 ]
