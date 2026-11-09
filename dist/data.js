@@ -174,13 +174,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "一面",
     "date": "2026-07-02",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6a464a880000000008001b89",
     "tags": [
       "AI Infra"
     ],
     "source_title": "ai Infra 面经 | 字节 | 约备面 （下）",
-    "body": "原帖正文（待进一步规范表达）：\n\n一面 总时长 85min\n\t\n面试官先问我在 kernel 优化方面的技能点主要点在哪个 part 是在上层针对具体场景，还是 kernel 本身，还是下层利用硬件特性\n\t\n我回答 kernel 本身，面试官表示接下来会围绕这个主题\n\t\n然后问了我项目里的优化思路\n\t\n然后就开始“头脑风暴”部分\n\t\n直接给我介绍了一个具体的推理场景（不是传统文本生成推理）然后问我在这个场景下，我能给出什么推理优化思路嘛？\n\t\n（本人瞬间卡住，一是没有很快 get 到具体场景和传统场景的差别，二是因为是速成的，还做不到临场拆解问题，给出思路）\n\t\n虽然表现糟糕，但面试官 sama 还是很耐心的引导我思考，并在反问环节给了我一些提点\n\t\n1. 每个优化 trick 都往下都问几个为什么\n2. Agent  能帮你干活，但分析问题，拆解问题，还是需要人类来把关，因为训推 profile 的成本问题，是不能像传统开发一样轻易信任 agent 然后用 TDD 之类的得到结果\n\t\n然后代码题是 CUDA or Triton 实现一个 fuse 的 norm 算子\n\t\n很感谢这次面试，准备的过程暴露了我自己很多问题（见上篇），面试本身也给了我很多视野（想想顶尖组会怎么做）\n\t\n#infra[话题]# #AIInfra[话题]# #面经[话题]# #字节跳动[话题]# #凉鞋[话题]# #来一点小小的二次元震撼[话题]# #好人面试官[话题]# #成长[话题]# #大厂[话题]# #交互的未来[话题]#\n"
+    "body": "一面，总时长约 85 分钟。\n\n1. 在 kernel 优化方面，主要擅长针对具体场景的上层优化、kernel 本身的优化，还是利用硬件特性的下层优化？\n   - 候选人回答：主要是 kernel 本身。面试官表示后续将围绕这一主题展开。\n2. 介绍项目中的优化思路。\n3. 针对一个具体的推理场景（不是传统文本生成推理），提出推理优化思路。\n   - 候选人反馈：没有迅速理解该场景与传统场景的差异，也因准备时间较短，暂时无法现场拆解问题并提出思路。\n4. 编程：使用 CUDA 或 Triton 实现一个 fused norm 算子。\n\n面试官在候选人回答不佳时耐心引导，并在反问环节给出建议：\n1. 对每个优化技巧多追问几个“为什么”。\n2. Agent 可以辅助工作，但分析和拆解问题仍需人把关。由于训练和推理 profiling 的成本，不能像传统开发一样轻易信任 Agent，再通过 TDD 等方法获得结果。\n\n候选人反馈：准备过程暴露了自身问题，面试也拓宽了视野，并引发了对顶尖团队做法的思考。\n"
   },
   {
     "id": "xhs-6ab2030c0000000031003353",
@@ -189,13 +189,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "一面",
     "date": "2026-09-22",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6ab2030c0000000031003353",
     "tags": [
       "AI Infra"
     ],
     "source_title": "字节 ai infra 一面",
-    "body": "原帖正文（待进一步规范表达）：\n\n面试官人很好，进来看到我一脸严肃就绷不住了，然后我也绷不住，这是相对来说最轻松的一次面试\n1.自我介绍\n环境不错\nxx公司的大模型发展\n为什么大家还没毕业喜欢说毕业于\n2.实习\n你是在rl中推理优化吗\n介绍一个最有趣的项目\n说一下原有架构有多烂\nall gather是聚合什么\n从哪个维度切\n通信量有减少吗\n原来完全不能overlap吗\n介绍你一下你的方法\nmask为什么导致负载不均\n这个问题是怎么解决的\n首尾切分是怎么做的\nkv cache管理这块怎么做的\n把最后一块拼到第一块会有额外通信开销 怎么权衡的\ndcp是什么 mtp是什么\n线上服务的模型batchsize开满 mtp有意义吗\n比如64batch打满 mtp推4个 prefill处理一个64*4的\ntpot全称是什么\n降低batch下增加吞吐是吗\n两个同时开为什么有问题\n为什么会让每个rank mask不一致\n你是如何解决的\n3.手撕\nurl parse 没见过，墨迹了半小时才过用例\n4.反问\n业务 训练推理都有 也有少量蒸馏 组里主要做扩散模型的\n推理优化  大组是广告垂类模型 视频换背景换衣 交付广告端\n要求  应届生了 不要对自己要求太高 放轻松能解就行\n建议 代码不流畅 讨论了一下为什么这样写\nmd.append x返回值是none 他被往里append是表达式的副作用 对于if else会不会去触发负作用 这样做不太合适 也没人这样写\n照着ai写不会这样  建议还是多刷题 项目不用太准备\nhot100有快速幂吗 还真没有\n#24h新鲜面经[话题]# #AINEXT[话题]# #互联网大厂[话题]# #大模型[话题]# #面经[话题]# #面试求职[话题]# #群面[话题]# #面试问题[话题]# #产品经理面试[话题]# #内推[话题]#\n"
+    "body": "候选人反馈：面试官态度友好，双方一开始因候选人的严肃表情而笑场，是候选人经历过较轻松的一次面试。\n\n1. 自我介绍。交流了面试环境、某公司的大模型发展，以及尚未毕业时使用“毕业于”的说法。\n2. 实习项目：是否在 RL 中进行推理优化？介绍一个最有趣的项目及原有架构的问题。\n3. All Gather 聚合什么？从哪个维度切分？通信量是否减少？原来是否完全无法 overlap？介绍自己的方法。\n4. 为什么 mask 会导致负载不均？如何解决？首尾切分如何实现？KV Cache 如何管理？将最后一块拼到第一块会增加通信开销，如何权衡？\n5. DCP 和 MTP 分别是什么？线上服务的 batch size 已满时，MTP 是否有意义？例如 batch 为 64、MTP 推 4 个 token，Prefill 处理一个 64×4 的输入。TPOT 的全称是什么？是否是在降低 batch 的情况下增加吞吐？\n6. 两个功能同时开启为什么会出现问题？为什么各 rank 的 mask 会不一致？如何解决？\n7. 编程：URL parse。候选人此前没有见过该题，约半小时后通过用例。\n8. 反问团队业务和岗位要求。\n\n面试官介绍：团队同时涉及训练、推理和少量蒸馏，主要做扩散模型推理优化；大组负责广告垂类模型，如视频换背景、换衣服并交付广告端。面试官建议应届生放松，不必对自己要求过高，能解决问题即可。\n\n面试官反馈：候选人代码不够流畅，双方讨论了写法，例如 `md.append(x)` 返回 None、向内部 append 是表达式的副作用，以及 if / else 是否会触发副作用；面试官认为这种写法不太合适，也不常见，按 AI 生成代码写通常不会如此。建议多刷题，项目不必准备太多。双方还讨论了 Hot 100 是否包含快速幂，发现没有。\n"
   },
   {
     "id": "xhs-6aaf4f930000000029018309",
@@ -204,13 +204,13 @@ const interviews = [
     "role": "GPU 调度",
     "stage": "一面",
     "date": "2026-09-20",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6aaf4f930000000029018309",
     "tags": [
       "AI Infra"
     ],
     "source_title": "字节 ai infra 一面",
-    "body": "原帖正文（待进一步规范表达）：\n\ngpu调度方向，hr复活的\n1.自我介绍\n2.实习\n讲一个你实习中的项目\nnpu的硬件架构\n从输入到输出对比gpu\nnpu的达芬奇架构\n如何衡量一张卡有没有用好\n利用率指标还有哪些 除了mfu\nkv cache原理是什么 解决了什么问题如何解决\n为什么是kv cache 不是q\n你这个ttft降低 是怎么衡量的\nttft有很多阶段 你优化的是哪一个\n分布式推理这一块你做了什么\n分布式训练做了什么\ngpu集群是什么样的 自己维护的吗\n断点续训如何做的 如何设计的\ncheckpoint如何保存的 做了什么优化\n训练时候的数据类型和模型并行是什么样的\n你为什么选vllm框架 有考虑过别的吗 如何取舍的\n你有做过调度相关的工作吗\n分布式系统了解吗\ncap是什么\n分布式缓存了解吗 多实例做缓存 防止把数据库打崩是吗\nredis了解吗\nmysql了解吗 到什么程度\n索引了解吗 线程进程了解吗\n常见的进程调度算法有哪些 特点分别是什么\n假如让你管理100w张卡 你会怎么做 如何拆解问题\nk8s 套一层机器学习平台 训练和推理平台 选指标衡量 比如利用率 部署率 先把卡用起来\n3.手撕\n第k大元素\n4.反问\n业务 管理字节ai算力卡\n要求 基础扎实 某些方向深入了解 考察学习能力\n建议 做好职业规划 注重深度 先深再广度 看一下和投的岗位是否匹配\n#24h新鲜面经[话题]# #AINEXT[话题]# #互联网大厂[话题]# #面经[话题]# #大模型[话题]# #面试求职[话题]# #群面[话题]# #面试问题[话题]# #产品经理面试[话题]# #内推[话题]#\n"
+    "body": "岗位方向：GPU 调度。候选人称由 HR 重新推进流程。\n\n1. 自我介绍，介绍一个实习项目。\n2. NPU 的硬件架构是什么？从输入到输出如何与 GPU 对比？介绍 NPU 的达芬奇架构。\n3. 如何衡量一张卡是否得到充分利用？除 MFU 外还有哪些利用率指标？\n4. KV Cache 的原理是什么？解决了什么问题、如何解决？为什么缓存 K 和 V，而不是 Q？\n5. TTFT 的降低如何衡量？TTFT 包含多个阶段，优化的是哪一个？\n6. 分布式推理和分布式训练分别做过什么？GPU 集群是什么样的，是否由自己维护？\n7. 断点续训如何实现和设计？Checkpoint 如何保存，做了哪些优化？训练时的数据类型和模型并行配置是什么样的？\n8. 为什么选择 vLLM？是否考虑过其他框架，如何取舍？是否做过调度相关工作？\n9. 是否了解分布式系统？CAP 是什么？是否了解分布式缓存？多实例使用缓存是否是为了防止数据库被打崩？\n10. 是否了解 Redis 和 MySQL，了解程度如何？是否了解索引、线程和进程？常见进程调度算法有哪些，各有什么特点？\n11. 假设需要管理 100 万张卡，会如何拆解和解决问题？\n   - 候选人记录：使用 K8s，并在其上构建机器学习训练和推理平台；选择利用率、部署率等指标衡量，先让卡得到利用。\n12. 编程：第 K 大元素。\n13. 反问：业务负责管理字节的 AI 算力卡；岗位要求基础扎实，在某些方向有深入理解，并考察学习能力。面试官建议做好职业规划，注重深度，先深后广，并考虑与投递岗位的匹配程度。\n"
   },
   {
     "id": "xhs-6ae9a64d0000000016005888",
@@ -219,13 +219,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "三面",
     "date": "2026-11-03",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6ae9a64d0000000016005888",
     "tags": [
       "AI Infra"
     ],
     "source_title": "字节ai infra 三面",
-    "body": "原帖正文（待进一步规范表达）：\n\n* MoE EP、去重、overlap？\n\t\n* DiT/AR 与 Ulysses/Ring？\n* DiT 反复扩散、序列长；AR 分 Prefill/Decode，涉及 KV Cache 与调度\n* Ulysses 用 All-to-All 重排 sequence/head；Ring 沿设备环传 KV\n\t\n* Linear Attention 在 Prefill 和 Decode 中怎样执行？\n* Hybrid 模型通常混合 full attention 与 linear attention，不是所有层都没有 KV Cache\n* Prefill 在 chunk 内并行、chunk 间传播 state；Decode 每 token 做 streaming update\n* 瓶颈转向 state/HBM 读写、归约、gating 的 SFU 开销和 small-batch launch\n\t\n* LLM batching 与调度分别优化什么？\n* continuous batching 动态进出；chunked prefill 切长 Prefill；token budget 控制每轮计算\n* TTFT 看首 token，TPOT/ITL 看 token 间隔；区分 token/s、request/s 和 goodput\n\t\n* 手撕：N 很大的 1D Softmax，怎样写？\n* 类似于reduce一个非常大的N（两个kernel版本）\n需要3个kernel，先小块做得到局部m和l，再用一个kernel把m和l合并，最后一个kernel根据m和l得到softmax结果\nkernel1:先分小块做单独的softmax（online或者其他都行\nkernl2: 一个block合并之前小block的m和l\nkernel3: 根据最终的m和l得到softmax结果\n\t\nllm调度那块没有答好，答得有点乱，手撕撕的还好。3工作日后约hr面，然后hr面后横向挂。\n"
+    "body": "1. MoE 的 EP、去重和 overlap 如何理解？\n2. DiT / AR 与 Ulysses / Ring 有什么关系或区别？\n   - 候选人记录：DiT 反复扩散、序列较长；AR 分为 Prefill 和 Decode，涉及 KV Cache 与调度。Ulysses 使用 All-to-All 重排 sequence / head；Ring 沿设备环传递 KV。\n3. Linear Attention 在 Prefill 和 Decode 中如何执行？\n   - 候选人记录：Hybrid 模型通常混合 full attention 和 linear attention，并非所有层都没有 KV Cache。Prefill 在 chunk 内并行、chunk 间传播 state；Decode 每 token 进行 streaming update。瓶颈转向 state / HBM 读写、归约、gating 的 SFU 开销和 small-batch launch。\n4. LLM batching 与调度分别优化什么？\n   - 候选人记录：continuous batching 支持动态进出，chunked prefill 切分长 Prefill，token budget 控制每轮计算。TTFT 关注首 token，TPOT / ITL 关注 token 间隔；需区分 token/s、request/s 和 goodput。\n5. 编程：N 很大的 1D Softmax 如何实现？类似对很大的 N 做 reduce。原文提到“两个 kernel 版本”，随后记录了三个 kernel 的方案：\n   - kernel 1：分小块分别计算，得到局部 m 和 l，可使用 online softmax 或其他方法。\n   - kernel 2：使用一个 block 合并之前各小块的 m 和 l。\n   - kernel 3：根据最终的 m 和 l 得到 softmax 结果。\n\n候选人反馈：LLM 调度部分回答较乱，编程题表现尚可；3 个工作日后约 HR 面，HR 面后横向比较未通过。\n"
   },
   {
     "id": "xhs-6ac65d920000000018004d3c",
@@ -234,13 +234,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "三面",
     "date": "2026-10-07",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6ac65d920000000018004d3c",
     "tags": [
       "AI Infra"
     ],
     "source_title": "字节 AI INFRA 三面复盘",
-    "body": "原帖正文（待进一步规范表达）：\n\n这轮主要围绕实习经历和项目展开。开场先确认我在过去的团队里负责什么、工作交付给谁，以及 TensorFlow 算子适配面向什么场景。\n\t\n技术部分先聊了 CUDA Graph 和 TP 同时开启时的卡死问题：\n为什么关闭 Graph，或者把 TP 降到 1，问题就消失；\n怎么逐步缩小到融合通信算子；\n通信状态标记放在哪里，为什么使用浮点数；\n修复后怎样通过最小复现和模型级回归验证。\n这里被追问得比较细。定位到某个判断出错后，还要能解释原来的同步机制为什么这样设计。\n之后聊了开发工具选择：为什么现在更多使用 Triton 和 CuTe DSL。我主要从算法协作、可读性、开发效率，以及当前优化需求来解释。\n\t\n接着是 Router Replay：\nrollout 记录的 token、layer、Top-K 信息给谁用；\n训练侧在哪一步消费这些路由；\n这是论文复现，还是实际训练中也遇到了问题；\n一个 token 进入 MoE 后，完整前向流程是什么；\nEP 通信有没有实际接触过。\nMoE 前向这段我没有讲顺，EP 通信也还缺工程经验。对局部代码比较熟，完整数据流还是需要重新梳理。\n\t\n后面介绍了一个滑动窗口 Attention 的确定性反向优化。重点是 dQ 累加中的等待：怎样缩小同步范围、调整执行顺序，并让独立计算链并行起来。面试官继续追问，这样改之后如何保证累加顺序和确定性。\n最后聊了国产 GPU 上的算子 benchmark，包括不同 shape、batch、dtype，以及自写 kernel、高性能库和旧实现之间的对比。也问到了硬件结构、显存带宽和卡间互联。\n\t\n我也问了改进建议。反馈是实习工作比较扎实，但部分 GPU 硬件表述不准确，需要查规格；通信基础也建议继续补。\n这场最大的提醒是：项目里的局部问题要讲清楚，模型数据流、硬件规格和通信基础也要接得上。后面会重点补 MoE 前向、EP 通信，以及确定性计算里的同步和累加顺序。\n\t\n欢迎准备 AI Infra、GPU 算子和训练推理系统的同学交流\n#AIInfra[话题]# #27届秋招[话题]# #面试复盘[话题]# #字节跳动[话题]#\n#面试复盘[话题]# # #谁AI上班[话题]#\n"
+    "body": "本轮主要围绕实习经历和项目展开。\n\n1. 在过去的团队中负责什么？工作交付给谁？TensorFlow 算子适配面向什么场景？\n2. CUDA Graph 和 TP 同时开启时发生卡死：为什么关闭 Graph 或将 TP 降到 1 后问题消失？如何逐步将范围缩小到融合通信算子？通信状态标记放在哪里，为什么使用浮点数？修复后如何使用最小复现和模型级回归验证？定位判断错误后，原同步机制为何如此设计？\n3. 为什么现在更多使用 Triton 和 CuTe DSL？\n   - 候选人从算法协作、可读性、开发效率和当前优化需求解释。\n4. Router Replay 中，rollout 记录的 token、layer、Top-K 信息供谁使用？训练侧在哪一步消费路由？这是论文复现，还是实际训练中也遇到了问题？一个 token 进入 MoE 后的完整前向流程是什么？是否实际接触过 EP 通信？\n   - 候选人反馈：MoE 前向没有讲清楚，EP 通信缺少工程经验；熟悉局部代码，但需要重新梳理完整数据流。\n5. 滑动窗口 Attention 的确定性反向优化：针对 dQ 累加的等待，如何缩小同步范围、调整执行顺序并使独立计算链并行？修改后如何保证累加顺序和确定性？\n6. 国产 GPU 上的算子 benchmark：如何比较不同 shape、batch、dtype，以及自写 kernel、高性能库和旧实现？还讨论了硬件结构、显存带宽和卡间互联。\n7. 反问改进建议。\n\n面试官反馈：实习工作比较扎实，但部分 GPU 硬件表述不准确，需要核对规格；建议继续补充通信基础。候选人计划重点学习 MoE 前向、EP 通信，以及确定性计算中的同步和累加顺序。\n"
   },
   {
     "id": "xhs-6a4239b2000000000803e322",
@@ -249,13 +249,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "一面",
     "date": "2026-06-29",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6a4239b2000000000803e322",
     "tags": [
       "AI Infra"
     ],
     "source_title": "腾讯infra一面面经",
-    "body": "原帖正文（待进一步规范表达）：\n\n最近面了不少中厂和大厂，腾讯和字节的面试难度断档地高。\n整体45min，实习经历+八股30min，手撕10min，反问5min。面试官比较喜欢质疑，记录一些关键问题：\n1.用单卡做的工作还是多卡，多卡时有考虑ep并行的头拆分问题吗\n2.质疑：把异步改为同步，没有什么性能下降？解释：瓶颈不在数据传输，在计算那边\n3.vllm怎么进行异步调度？（字节同款问题，又忘了，想扇自己几巴掌）胡乱答了一下，面试官：我觉得你理解偏差比较大，回去再看一下[偷笑R]\n4.投机解码的接收策略，具体公式是什么（忘了）\n5.投机解码具体解决什么问题（我：大模型前向传播太慢）面试官：具体细节呢\n6.moe架构的运行过程，张量维度怎么变化的\n7.moe并行过程中，怎么进行通信，有几种通信方式\n8.continue batching，dynamic batching，steady batching，persistent batching了解吗\n手撕hot100mid原题，库函数编译器报错，讲了一下思路算过了\n\t\n#腾讯[话题]# #teg[话题]# #infra[话题]# #混元[话题]# #一面面经[话题]# #手撕代码[话题]#\n"
+    "body": "面试约 45 分钟：实习经历和基础问题 30 分钟、编程 10 分钟、反问 5 分钟。候选人认为腾讯和字节的面试难度明显高于近期面过的其他公司，且本场面试官较常质疑细节。\n\n1. 工作使用单卡还是多卡？多卡时是否考虑过 EP 并行的头拆分问题？\n2. 将异步改为同步后，为什么性能没有明显下降？\n   - 候选人解释：瓶颈在计算而非数据传输。\n3. vLLM 如何进行异步调度？\n   - 候选人记不清，尝试回答后，面试官认为其理解偏差较大，建议重新学习。\n4. 投机解码的接受策略及具体公式是什么？候选人表示忘记了。\n5. 投机解码具体解决什么问题？\n   - 候选人回答“大模型前向传播太慢”，面试官追问具体细节。\n6. MoE 架构的运行过程是什么？张量维度如何变化？\n7. MoE 并行时如何通信？有几种通信方式？\n8. 是否了解 continue batching、dynamic batching、steady batching 和 persistent batching？\n9. 编程：LeetCode Hot 100 中一道中等难度原题。候选人遇到库函数编译报错，讲解思路后算通过。\n"
   },
   {
     "id": "xhs-6ac9adf1000000001500368b",
@@ -264,13 +264,13 @@ const interviews = [
     "role": "混元 · 多模态推理",
     "stage": "二面",
     "date": "2026-10-10",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6ac9adf1000000001500368b",
     "tags": [
       "AI Infra"
     ],
     "source_title": "腾讯混元ai infra 二面（1）",
-    "body": "注意：原帖标题标注“（1）”，正文末尾注明字数限制，本帖内容可能有后续。\n\n原帖正文（待进一步规范表达）：\n\n已吓哭\n1.自我介绍\n2.面试官介绍\n混元的多模态推理团队 大语言也做 hy34这些 做图像生成视频生成3d语音\n方向包括框架 算子 后台 加速算法\n3.论文\n没看到paper相关的 是没写吗\n4.实习\nvllm ascend用的什么卡型\n910c多少显存 两卡合在一起用吗\n长序列是多长的 什么模型 attention什么结构\ndsv3.1除了mla 还有nsa吗 只有mla不合理吧\n长序列中kvcache占用过高 怎么理解\nallgather峰值显存很高 有多高\n你这个场景 slo的ttft上限是多少\nprefill推理bs多少 chunksize多少 prefixcache命中率是多少\n一个session内 有没有考虑过多轮请求的情况\n如何管理多轮对话的kv\n有这样的能力吗 当时开了吗 只有gpu是吧\n单轮推理完后每rank部分还是全量kv 指的是prefill没有decode\n对输入的长序列全量计算 没有prefix 没有多轮对话管理 这不是一个工业场景\n需要去思考一下高prefix命中率 通信尽可能少是如何做的\nring attention你是怎么做的\n通算overlap是在python维度吗 双流吗 有没有更好的方式\n短序列 q len小的时候 通信大计算小 怎么做\n你这场景是你的舒适区 没有更极致的优化 你做的类似于视频生成 但线上不是这样\n你说的tp开小 解决不了kv显存占用高的问题\n是同时开tp和cp 减少cp group size吗\n你的本质是什么 怎么理解\n减小tp是通信量降低了吗 大概多少\n指的是kv的通信 减少tp和kv通信什么关系\n你说的ttft优化的角度 怎么做怎么做 详细讲一下\n8卡baseline如何 tp和pcp互斥吗\ntp切的是什么 哪些投影矩阵的权重 kv的投影矩阵也切了吗 不是一个头吗怎么切tp\n减少tp是怎么增加通信量 降低计算量的\n你这个mla是吸收吗 还是非吸收的 为什么非吸收的\n吸收有什么问题什么好处\n没有吸收kv有head吗\n问懵了是吧，kv这块做的离工业场景远了点\n相比ring attention 业界有什么更好的方案吗\n你的就是python 双流 有更极致的优化吗 比如算子\n通算能融合在一个算子里吗\nkv通算这一块还有了解别的技术吗 不是python层面的\nflux知道吗 怎么做的\n（字数限制..）\n"
+    "body": "注意：原帖标题标注“（1）”，正文末尾注明字数限制，内容可能有后续。\n\n1. 自我介绍。\n2. 面试官介绍团队：混元多模态推理团队也做大语言模型，如 HY34，涉及图像生成、视频生成、3D 和语音；方向包括框架、算子、后台和加速算法。\n3. 论文：没有看到论文相关内容，是没有写吗？\n4. vLLM Ascend 使用什么卡型？910C 有多少显存？两张卡是否合在一起使用？\n5. 长序列有多长？使用什么模型，Attention 结构是什么？DS V3.1 除 MLA 外还有 NSA 吗？只有 MLA 是否合理？如何理解长序列下 KV Cache 占用过高？All Gather 的峰值显存有多高？\n6. 项目场景中 SLO 的 TTFT 上限是多少？Prefill 推理的 batch size、chunk size 和 prefix cache 命中率是多少？\n7. 是否考虑过一个 session 中的多轮请求？如何管理多轮对话的 KV？是否具备该能力、当时是否开启，是否只有 GPU？单轮 Prefill 完成、尚未 Decode 时，每个 rank 持有部分还是全量 KV？\n   - 面试官指出：对输入长序列全量计算、没有 prefix 和多轮对话管理，并不是工业场景；需要思考如何提高 prefix 命中率并尽量减少通信。\n8. Ring Attention 如何实现？通信与计算的 overlap 在 Python 层实现吗？是否使用双流？有没有更好的方式？短序列、Q length 较小时，通信大于计算，应如何处理？\n   - 面试官认为该场景属于候选人的舒适区，缺少更极致的优化；实现类似视频生成，但线上场景并非如此。\n9. 降低 TP 是否能解决 KV 显存占用过高？是否同时开启 TP 和 CP 来减少 CP group size？其本质是什么？减小 TP 是否降低通信量、约降低多少？KV 通信与减少 TP 有什么关系？TTFT 优化具体如何实现？\n10. 8 卡 baseline 是什么？TP 和 PCP 是否互斥？TP 切分什么、切哪些投影矩阵权重？KV 投影矩阵也切了吗？如果只有一个头，如何切 TP？减少 TP 为什么会增加通信量、降低计算量？\n11. 使用的 MLA 是吸收还是非吸收？为什么使用非吸收？吸收有什么问题和好处？没有吸收时 KV 有 head 吗？\n   - 面试官认为候选人在 KV 方面的工作距离工业场景较远。\n12. 相比 Ring Attention，业界还有什么更好的方案？除了 Python 双流，是否有更极致的优化，如算子优化？通信与计算能否融合到一个算子？除 Python 层外，还了解哪些 KV 通信计算技术？是否了解 Flux，如何实现？\n\n候选人反馈：面试压力较大，原帖因字数限制在此结束。\n"
   },
   {
     "id": "xhs-6a66188b000000000401f0f2",
@@ -279,13 +279,13 @@ const interviews = [
     "role": "混元 AI Infra",
     "stage": "面试记录",
     "date": "2026-07-26",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6a66188b000000000401f0f2",
     "tags": [
       "AI Infra"
     ],
     "source_title": "腾讯混元Ai infra",
-    "body": "原帖正文（待进一步规范表达）：\n\n腾讯混元Ai infra.\n1.自我介绍\n2.详细问了vllm 相关的东西，如果想去做推理方向的话，把vllm吃透就行了（我其实对vllm懂得不是很深，只是对一些关键技术有了解）\n3.拷打实习，RL训练的性能优化，一些算子问题（问了cuda，但是主包不太会，还是多学习这方面知识，如果大家想偏低层一些的话cuda还是要会的，虽然算子用triton 和tilelang 就可以写。）\n4.Megatron先说原理，各种并行，然后介绍实际项目中如何考虑各种并行度的选择\n4.聊了一些专业相关，主包非科班转码，被拷打了，面试官问约了多久\n无手撕，主要是做推理方向的vllm的二开其实不是很match，虽然问题很少但是问了很多相关的，大家感兴趣的话，可以做相关准备，给大家一个参考#大厂[话题]# #ai[话题]# #大模型[话题]# #算法[话题]# #实习[话题]# #腾讯[话题]# #混元[话题]##大模型[话题]# #工作[话题]# #学习[话题]#\n"
+    "body": "腾讯混元 AI Infra 面试记录。\n\n1. 自我介绍。\n2. 详细讨论 vLLM。\n   - 候选人反馈：认为推理方向应深入掌握 vLLM；自己仅了解部分关键技术，理解不够深入。\n3. 深入讨论实习中的 RL 训练性能优化和算子问题，也问到了 CUDA。\n   - 候选人反馈：自己不太熟悉 CUDA，认为偏底层方向仍应学习 CUDA，尽管也可以使用 Triton 和 TileLang 编写算子。\n4. 介绍 Megatron 原理和各种并行方式，以及实际项目中如何选择并行度。\n5. 讨论专业背景。候选人是非科班转码，面试官对此深入提问，并询问约了多久。\n6. 本场没有手写代码。团队主要做推理方向的 vLLM 二次开发，候选人认为与自己的经历不太匹配；虽然题目不多，但相关问题问得较细。\n"
   },
   {
     "id": "xhs-6ac38391000000001b01e2e5",
@@ -294,13 +294,13 @@ const interviews = [
     "role": "混元 AI Infra",
     "stage": "一面",
     "date": "2026-10-05",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6ac38391000000001b01e2e5",
     "tags": [
       "AI Infra"
     ],
     "source_title": "腾讯混元AI infra部门一面",
-    "body": "原帖正文（待进一步规范表达）：\n\n1. Tensor Parallel\nTP 怎么切 Linear / Attention / FFN？Column Parallel 与 Row Parallel 分别怎么切，通信发生在哪里？\n\t\n合并追问：\n- Column Parallel 切输入维还是输出维？\n- Row Parallel 怎么切？\n- QKV 怎么做 TP？\n- Attention Head 怎么切？\n- FFN 两层怎么组合切分？\n- 为什么经常采用 Column Parallel + Row Parallel？\n- TP Size 越大是否一定越快？\n2. 集合通信\nTP 中为什么需要 All-Reduce / Reduce-Scatter / All-Gather？具体通信量怎么计算？\n\t\n包括：\n- 给定 Tensor Shape，通信多少 Byte？\n- TP=2 与 TP=4 有什么变化？\n- 通信量与 Batch、Sequence Length、Hidden Size 的关系是什么？\n- 怎么判断已经进入 Communication Bound？\n3. DP\nDP 和 TP 到底有什么区别？什么时候应该增加 DP 而不是 TP？\n\t\n包括：\n- DP 是否复制完整模型？\n- 为什么 DP 提升吞吐？\n- DP 是否降低单请求延迟？\n- 单卡放不下模型时 DP 能解决吗？\n- Serving DP 和训练 DP 有什么不同？\n4. Pipeline Parallel\nPP 如何切模型，为什么真正实现起来很复杂？\n\t\n包括：\n- Stage 怎么划分？\n- Micro-Batch 是什么？\n- Pipeline Bubble 怎么产生？\n- 如何减少 Bubble？\n- Stage 不均衡怎么办？\n- 为什么 PP 会增加 Latency？\n- 是否真正实现过 PP？\n5. Context Parallel\nCP 为什么适合长 Context？把 Sequence 切开以后 Attention 如何进行跨 GPU 计算？\n\t\n6. AI 实战编码考核\n- 考核内容：完成 QQ 空间好友动态推荐功能开发，覆盖动态数据管理、行为仿真、评分排序、TopN 推荐全流程。\n#面经[话题]# #大模型[话题]#\n"
+    "body": "1. Tensor Parallel：TP 如何切分 Linear、Attention 和 FFN？Column Parallel 和 Row Parallel 分别如何切分，通信发生在哪里？\n   - Column Parallel 切输入维还是输出维？Row Parallel 如何切分？QKV 如何做 TP？Attention head 如何切分？FFN 两层如何组合切分？为什么常用 Column Parallel + Row Parallel？TP size 越大是否一定越快？\n2. 集合通信：TP 中为什么需要 All-Reduce、Reduce-Scatter 和 All-Gather？具体通信量如何计算？\n   - 给定 tensor shape，通信多少 Byte？TP=2 与 TP=4 有什么变化？通信量与 batch、sequence length、hidden size 有什么关系？如何判断已进入 communication bound？\n3. Data Parallel：DP 和 TP 有什么区别？什么时候应增加 DP 而不是 TP？\n   - DP 是否复制完整模型？为什么 DP 能提高吞吐？DP 是否降低单请求延迟？单卡放不下模型时 DP 能否解决？Serving DP 和训练 DP 有什么不同？\n4. Pipeline Parallel：PP 如何切分模型？为什么实际实现复杂？\n   - Stage 如何划分？Micro-batch 是什么？Pipeline bubble 如何产生、如何减少？Stage 不均衡怎么办？为什么 PP 会增加延迟？是否实际实现过 PP？\n5. Context Parallel：CP 为什么适合长 context？切分 sequence 后，Attention 如何跨 GPU 计算？\n6. AI 实战编码考核：开发 QQ 空间好友动态推荐功能，覆盖动态数据管理、行为仿真、评分排序和 Top N 推荐的完整流程。\n"
   },
   {
     "id": "xhs-6ac3a198000000001b0313c8",
@@ -309,13 +309,13 @@ const interviews = [
     "role": "混元 · 推理优化",
     "stage": "二面",
     "date": "2026-10-05",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6ac3a198000000001b0313c8",
     "tags": [
       "AI Infra"
     ],
     "source_title": "腾讯AI infra部门二面",
-    "body": "原帖正文（待进一步规范表达）：\n\n腾讯混元 AI\n岗位：混元 AI 推理团队 —— 大模型推理优化方向。\n面试官为负责 KV Cache 与调度的 leader，面试集中在大模型推理系统方向：\n自我介绍及 AI Infra 项目、论文成果\n安培→Hopper→Blackwell 三代指令集变化（TMA、Tensor Memory、异步调度、FP4/FP6）\nHopper WGMMA 需 Warp Group 发射，Blackwell UMMA 为何只需单 Warp；Tensor Memory 上如何应用 scale factor\nCache-aware 路由中热点实例问题：cache score+load score 方案、lambda 确定、命中率影响、跨实例 KV Cache 共享、与 Dynamo 已有策略的差异\n英特尔 TILE cache 仿真（为客户提供并行配置与 PD 配比参考）及系统层级\nW4A4 稀疏 kernel：WMMA 指令、量化方案、4 Tile 对应 1 Bitmap 创新、split key/double buffer/LSBD pipeline、M16N8K64、应用场景\n笔试二选一：手写 Save Softmax 及优化点（Warp Shuffle 归约、寄存器暂存减访存）\n反问：团队业务、技术难点、人均 GPU、调度 / 框架 / 算子分团队\n#面试[话题]# #大厂[话题]# #面试问题[话题]# #大模型[话题]# #互联网[话题]#\n"
+    "body": "岗位：腾讯混元 AI 推理团队，大模型推理优化方向。面试官负责 KV Cache 与调度，面试主要围绕大模型推理系统。\n\n1. 自我介绍，介绍 AI Infra 项目及论文成果。\n2. Ampere → Hopper → Blackwell 三代指令集有哪些变化？涉及 TMA、Tensor Memory、异步调度及 FP4 / FP6。\n3. Hopper 的 WGMMA 需要 warp group 发射，为什么 Blackwell 的 UMMA 只需单个 warp？如何在 Tensor Memory 上应用 scale factor？\n4. Cache-aware 路由中的热点实例：cache score + load score 方案如何设计，lambda 如何确定，对命中率有什么影响？如何跨实例共享 KV Cache？与 Dynamo 现有策略有什么区别？\n5. 英特尔 TILE cache 仿真及系统层级：如何为客户提供并行配置和 PD 配比参考？\n6. W4A4 稀疏 kernel：WMMA 指令、量化方案、4 Tile 对应 1 Bitmap 的创新、split key / double buffer / LSBD pipeline、M16N8K64 和应用场景。\n7. 笔试二选一：手写 Save Softmax（原文如此）及优化点，包括 warp shuffle 归约和使用寄存器暂存以减少访存。原帖未说明另一道题。\n8. 反问：团队业务、技术难点、人均 GPU，以及调度、框架和算子团队的划分。\n"
   },
   {
     "id": "xhs-6a6efa530000000028005c8c",
@@ -324,13 +324,13 @@ const interviews = [
     "role": "游戏 · 训练框架",
     "stage": "一面",
     "date": "2026-08-02",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6a6efa530000000028005c8c",
     "tags": [
       "AI Infra"
     ],
     "source_title": "腾讯游戏 ai infra 训练框架一面",
-    "body": "原帖正文（待进一步规范表达）：\n\n整体面试感觉面试官有点不感兴趣，整体问题也不深不难\n后面一问他们是做强化学习的，最后也顺理成章地把我挂了，以下是正文：\n- [ ] 项目模型 mfu是多少？\n- [ ] 所用框架的并行方式都支持吗？\n- [ ] 问了 ddp和zero有什么区别\n- [ ] 项目细节 xxx，如何\n- [ ] 项目只是框架适配吗？还是有具体的功能开发\n- [ ] 芯片适配问题，挑一个讲\n- [ ] pin memory 具体是怎么通信的，有几个进程（这个没答上）\n- [ ] cpu 内部通过队列 queue 通信\n- [ ] Tp和pp的使用场景？\n- [ ] 做过强化学习吗？（我说没有，只是了解）\n- [ ] mha gqa mqa有什么区别\n- [ ] 代码：写一个gqa的实现\n#大模型[话题]# #腾讯游戏[话题]# #aiinfra[话题]# #转码[话题]#\n"
+    "body": "候选人反馈：感觉面试官兴趣不高，问题不深也不难；后来了解到团队做强化学习，本场未通过。\n\n1. 项目模型的 MFU 是多少？\n2. 所用框架支持哪些并行方式？DDP 和 ZeRO 有什么区别？\n3. 项目的具体细节是什么？项目只是框架适配，还是包含具体功能开发？\n4. 选择一个芯片适配问题进行介绍。\n5. Pin memory 具体如何通信，有几个进程？\n   - 候选人表示没有答上；原文另记“CPU 内部通过队列 queue 通信”。\n6. TP 和 PP 的使用场景是什么？\n7. 是否做过强化学习？候选人回答没有做过，仅有了解。\n8. MHA、GQA、MQA 有什么区别？\n9. 编程：实现 GQA。\n"
   },
   {
     "id": "xhs-696b0d9d000000000e00ecf9",
@@ -339,13 +339,13 @@ const interviews = [
     "role": "阿里国际 · AI Infra",
     "stage": "面试记录",
     "date": "2026-01-17",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/696b0d9d000000000e00ecf9",
     "tags": [
       "AI Infra"
     ],
     "source_title": "阿里国际ai infra面（凉）经",
-    "body": "原帖正文（待进一步规范表达）：\n\n由于是整个12月的第一场面试，可能也算本人第一次面大厂，很多基本的八股都不懂，好在面试官人很好，应该看出来了我是个新人，最后给我提了很多学习上的建议，当然也是不出意外挂了\n\t\n1.15min自我介绍\n2.针对项目提问\n3.FlashAttention原理，Online softmax，有没有看过cuda kernel，FlashAttention V1,V2,V3，FlashDecoding原理\n4.推理优化的思路（方法）有哪些\n5.用没用过vllm/SGLang，原理\n6.有没有听说过Dynamic Batching\n7.\nCoding：写一个ruduce，用block，优化版：用warp shuffle，能不能再优化？（不会了）\n8.加载到shared memory和直接从HBM取input比为什么更快（取得数组里面数的数目都是一样的）\n9.有没有听说过shared memory的bank conflict\n10.反问：在哪些地方可以继续提升自己\n#阿里国际[话题]# #面经[话题]#\n"
+    "body": "候选人反馈：这是整个 12 月的第一场面试，也可能是第一次参加大厂面试；很多基础问题不了解。面试官态度友好，最后给了学习建议，本场未通过。帖子发布时间与面试发生时间可能不同。\n\n1. 自我介绍，约 15 分钟。\n2. 根据项目提问。\n3. FlashAttention 和 Online Softmax 的原理是什么？是否看过 CUDA kernel？FlashAttention V1、V2、V3 和 FlashDecoding 的原理是什么？\n4. 推理优化有哪些思路和方法？\n5. 是否使用过 vLLM 或 SGLang？原理是什么？\n6. 是否了解 Dynamic Batching？\n7. 编程：使用 block 编写 reduce；优化版本使用 warp shuffle；是否还能进一步优化？候选人未能继续回答。\n8. 在读取的数组元素数量相同时，为什么加载到 shared memory 比直接从 HBM 读取 input 更快？\n9. 是否了解 shared memory 的 bank conflict？\n10. 反问：自己还可以在哪些方面提升？\n"
   },
   {
     "id": "xhs-6a9c3de3000000002502ecf9",
@@ -354,13 +354,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "二面",
     "date": "2026-09-06",
-    "type": "图片待核对，正文待规范",
+    "type": "正文已整理 · 图片待核对",
     "source": "https://www.xiaohongshu.com/explore/6a9c3de3000000002502ecf9",
     "tags": [
       "AI Infra"
     ],
     "source_title": "阿里 ai infra 二面复盘",
-    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n原帖正文（待进一步规范表达）：\n\n开场先是数据结构和网络原理热身：\n\t\n链表、二叉树、哈希表的复杂度和使用场景；\n几千到几万个定时器该如何管理，堆的插入、触发复杂度；\nTCP / UDP 的区别、三次握手；\n多台机器共用交换机时，TCP 和 UDP 在不同数据规模下的实际表现。\n\t\n这部分让我很清醒：AI Infra 不会因为你做过 CUDA，就不问基础。尤其是计网、数据结构这些，得能真的顺着场景往下推，而不是只记几个结论。\n\t\n项目部分主要深挖了四块：\nTP + CUDA Graph 场景下的稳定性排查。 从大规模超时开始，先缩到 TP=2 的最小复现，再对比 TP=1 / TP>1，最后把范围收敛到一条融合通信路径的状态同步问题。面试官会继续问：Graph 是触发条件还是根因？通信双方怎么判断 buffer 状态？为什么默认路径没复现？\n\t\n确定性 Router GEMM。 会问为什么 Split-K 会影响确定性、为什么固定配置的 persistent kernel 在小 M 下浪费严重，以及如何根据 shape 选更合适的路径，同时保留回退方案。\n\t\nDecode 侧减少 CPU/GPU 同步等待的融合算子。 重点是原先的数据为什么要来回经过 CPU，哪些计算可以留在 GPU 上完成，怎样减少 decode 中反复出现的空隙。\n\t\nNCCL 与推理系统设计。 Ring / Tree All-Reduce 怎么工作、各自偏吞吐还是延迟；如果做多节点 Prefill / Decode 分离，Prefill 产生的 KV Cache 怎么给 Decode 节点，通信方式和缓存复用该怎么权衡。\n\t\n这场最大的收获是：以后讲项目不能只停在“我定位并修了一个 bug”。要能完整讲出：\n触发条件 → 最小复现 → 排查假设 → 根因范围 → 修复边界 → 正确性与回归验证。\n#AIInfra[话题]# #27届秋招[话题]# #面试复盘[话题]# #阿里[话题]#\n"
+    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n1. 链表、二叉树、哈希表的复杂度和使用场景是什么？\n2. 如何管理几千到几万个定时器？堆的插入和触发复杂度是多少？\n3. TCP 与 UDP 有什么区别？TCP 三次握手如何进行？多台机器共用交换机时，TCP 和 UDP 在不同数据规模下实际表现如何？\n4. TP + CUDA Graph 场景下的稳定性排查：如何从大规模超时缩小到 TP=2 的最小复现，对比 TP=1 / TP>1，并将范围收敛到融合通信路径的状态同步问题？Graph 是触发条件还是根因？通信双方如何判断 buffer 状态？为什么默认路径未复现？\n5. 确定性 Router GEMM：为什么 Split-K 会影响确定性？为什么固定配置的 persistent kernel 在小 M 下浪费严重？如何根据 shape 选择更合适的路径，并保留回退方案？\n6. Decode 侧减少 CPU / GPU 同步等待的融合算子：为什么原数据需要往返 CPU？哪些计算可以留在 GPU 上？如何减少 Decode 中反复出现的空隙？\n7. NCCL 与推理系统设计：Ring / Tree All-Reduce 如何工作，各自偏向吞吐还是延迟？多节点 Prefill / Decode 分离时，Prefill 产生的 KV Cache 如何传给 Decode 节点，如何权衡通信方式和缓存复用？\n\n候选人反馈：数据结构和网络基础仍然重要，需要结合场景推导。介绍项目问题时，应完整说明触发条件、最小复现、排查假设、根因范围、修复边界以及正确性与回归验证。\n"
   },
   {
     "id": "xhs-6aa3ff60000000002901aab6",
@@ -369,13 +369,13 @@ const interviews = [
     "role": "阿里妈妈 · Infra",
     "stage": "一面",
     "date": "2026-09-11",
-    "type": "图片待核对，正文待规范",
+    "type": "正文已整理 · 图片待核对",
     "source": "https://www.xiaohongshu.com/explore/6aa3ff60000000002901aab6",
     "tags": [
       "AI Infra"
     ],
     "source_title": "阿里妈妈ai infra一面",
-    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n原帖正文（待进一步规范表达）：\n\n阿里妈妈 Infra 一面。整体主要聊项目，基本没怎么问八股。\n\t\n有个比较尴尬的点：面试官刚好是做世界模型 / VAE 并行的，而我之前 的 VAE 并行直接做了 spatial 切分，没有上 halo exchange 这种无损方案，正好撞到人家专业领域了，被追着问了一下😂 感觉简历里这部分可能还得重新斟酌下表述。\n\t\n手撕两道：一道 CUDA Online Softmax，这个还算正常；另一道直接给我上了个顶级智力题，据说还是 AI 出的，我是真服了。大概是：100 张 GPU 对应 100 个随机打乱的任务，每张卡最多只能沿着任务给出的编号找 50 次，要求设计一种策略，让所有 GPU 都找到自己的任务，并分析成功概率。\n\t\n本质上是随机排列的置换环 / cycle decomposition问题，属于经典 100 prisoners problem 的变体。面试的时候突然来这么一道，多少有点猝不及防。\n\t\n智力题：100 个 GPU 找任务包\n\t\n有 100 个 GPU，编号为 0 ~ 99。同时有 100 个任务包，每个任务包上标有一个 GPU 编号，并且 0 ~ 99 每个编号恰好出现一次。\n\t\n这 100 个任务包被随机放到 100 个 GPU 上，每个 GPU 上恰好放一个，因此任务包的位置实际上构成了一个随机排列。\n\t\n对于 GPU i，它的目标是找到编号为 i 的任务包。\n\t\n每个 GPU 最开始从自己的位置出发。它每查看一个位置，就能看到该位置任务包上的编号，并据此决定下一步去查看哪个 GPU 上的任务包。每个 GPU 最多只能查看 50 个位置。\n\t\n所有 GPU 可以提前约定同一种策略，但搜索过程中不能互相通信，也不知道其他 GPU 查到了什么。\n\t\n问：\n\t\n1. 是否存在一种策略，使得“100 个 GPU 全部在 50 次以内找到自己的任务包”的概率，远高于每个 GPU 随机选择 50 个位置？\n2. 如果有，这个策略是什么？\n3. 整体成功概率大约是多少？\n"
+    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n阿里妈妈 Infra 一面，主要讨论项目，基础问题较少。\n\n1. 世界模型 / VAE 并行：候选人此前直接对 VAE 做 spatial 切分，未使用 halo exchange 等无损方案；面试官从其专业领域出发进行了追问。\n   - 候选人反馈：认为简历中这部分的表述需要重新斟酌。\n2. 编程：使用 CUDA 实现 Online Softmax。\n3. 智力题：100 个 GPU 寻找任务包。\n   - 100 个 GPU 编号为 0～99；100 个任务包也分别标有 0～99，每个编号恰好出现一次。任务包随机分配到 GPU，每张卡恰好放一个，位置构成随机排列。\n   - GPU i 要找到编号为 i 的任务包，从自己的位置开始。每查看一个位置，就可看到该任务包上的编号，并据此决定下一步查看哪个 GPU 上的任务包；每个 GPU 最多查看 50 个位置。\n   - 所有 GPU 可以事先约定同一种策略，但搜索过程中不能相互通信，也不知道其他 GPU 的搜索结果。\n   - 是否存在一种策略，使所有 GPU 在 50 次以内找到各自任务包的概率远高于每个 GPU 随机选择 50 个位置？如果有，策略是什么？整体成功概率约为多少？\n\n候选人认为第 3 题是随机排列中的置换环 / cycle decomposition 问题，属于经典 100 prisoners problem 的变体；据面试官说，该题可能由 AI 生成。候选人对面试中遇到该题感到意外。\n"
   },
   {
     "id": "xhs-6ad99bac000000002c010b80",
@@ -384,13 +384,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "一面",
     "date": "2026-10-22",
-    "type": "图片待核对，正文待规范",
+    "type": "正文已整理 · 图片待核对",
     "source": "https://www.xiaohongshu.com/explore/6ad99bac000000002c010b80",
     "tags": [
       "AI Infra"
     ],
     "source_title": "阿里巴巴 ai infra 一面面经（总结扩展版）",
-    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n原帖正文（待进一步规范表达）：\n\n1️⃣ MoE 投机解码： 为什么 MoE 模型做 Speculative Decoding 时，加速收益不能像 Dense Model 一样随着一次 Verify 的 Token 数增加而近似线性提升？\n2️⃣ FP8 → FP4 量化： FP8 转 FP4 的完整量化流程是什么？具体应该怎么做？\n3️⃣ MXFP8 格式： MXFP8 能表示的数值范围是多少？精度如何？与 MXFP4、FP16/BF16 有什么区别？\n4️⃣ Scale 与 Weight 对齐： 针对 MXFP4 量化中 Scale 与 Weight 的分片对齐问题，如果不受现有实现限制，还可以从哪些角度设计解决方案？\n5️⃣ KV Cache 与 L2 Cache： 如果将 KV Cache 放到 HBM 以外的其他介质中，还需要关注 L2 Cache 吗？应该从哪些方面进行优化？\n6️⃣ 硬件选型与性能对比： 为什么选择 NVIDIA H20 与华为昇腾 A5 进行性能对比，而不是选择其他 GPU 或 AI 加速卡？\n7️⃣ 手撕算法题（二选一）：\n- 手撕 MoE：实现 MoE 的核心计算流程，包括 Router、Top-K Expert 选择、Expert 计算与结果合并。\n- 二叉树后序遍历：非递归实现二叉树后序遍历\n\t\n前面的问题我都还算是能回答得上来，手撕moe这道题一出我就破防了[捂脸R][捂脸R]，谁能撕出来哇\n#秋招[话题]# #面经[话题]# #阿里巴巴[话题]# #互联网大厂[话题]#\n"
+    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。原帖标题称“总结扩展版”，不能确认每项追问是否均为现场原话。\n\n1. MoE 投机解码：为什么 MoE 模型进行 Speculative Decoding 时，加速收益不能像 Dense Model 一样，随着一次 Verify 的 token 数增加而近似线性提升？\n2. FP8 → FP4 量化：完整的量化流程是什么，具体如何操作？\n3. MXFP8 格式：可表示的数值范围和精度如何？与 MXFP4、FP16 / BF16 有什么区别？\n4. Scale 与 Weight 对齐：对于 MXFP4 量化中 Scale 与 Weight 的分片对齐问题，如果不受现有实现限制，还可以从哪些角度设计解决方案？\n5. KV Cache 与 L2 Cache：如果将 KV Cache 放到 HBM 以外的其他介质中，是否还需要关注 L2 Cache？应从哪些方面优化？\n6. 硬件选型与性能对比：为什么选择 NVIDIA H20 与华为昇腾 A5，而不是其他 GPU 或 AI 加速卡？\n7. 编程（二选一）：实现 MoE 核心计算流程，包括 Router、Top-K Expert 选择、Expert 计算和结果合并；或者非递归实现二叉树后序遍历。\n\n候选人反馈：前面的问题基本能回答，但手写 MoE 感到困难。\n"
   },
   {
     "id": "xhs-6a30c6f20000000020039533",
@@ -399,13 +399,13 @@ const interviews = [
     "role": "Infra",
     "stage": "一面 / 二面",
     "date": "2026-06-16",
-    "type": "图片待核对，正文待规范",
+    "type": "正文已整理 · 图片待核对",
     "source": "https://www.xiaohongshu.com/explore/6a30c6f20000000020039533",
     "tags": [
       "AI Infra"
     ],
     "source_title": "百度infra一二面面经",
-    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n原帖正文（待进一步规范表达）：\n\nbg双9本硕，28届研一，一段小厂infra实习，无论文。\n面试官很和蔼，态度非常好，深挖了实习经历，简略问了项目经历，问了一些基础八股，大部分都答上来了，但是编程语言八股和手撕答的不好。\n整体时间75min，简历+八股45min，手撕25min，反问5min。\n记录一些答的不好的问题：\n1.prefix cache融合算子融合了哪些\n2.了解DSA吗（这个看过但是忘了）\n3.vllm支持哪种投机解码\n4.看过trition算子吗（没看过）\n5.算子访存效率，计算能到多满，怎么评估\n6.std forward，move，enable if各有什么作用\n7.python的全局解释器锁是什么？\n8.rope编码相对于传统位置编码的优点？\n手撕力扣非hot100mid\n\t\n二面大概40min，无八股无手撕，主要针对简历的提问，有看代码回答问题环节。\n面试完到口头offer隔了一周，都以为挂了，可能横向的时间比较长[捂脸R]\n\t\n总结百度这两面，感觉实习和八股能力是基本达标的，但是代码能力还有差距。虽然ai时代很少手写代码了，但是代码能力作为重要的筛选标准，大厂面试还是经常出现，想去大厂手撕还是基本能力。infra这边代码能力要求一般比算法更高，且以C++为主。\n\t\n#互联网大厂[话题]# #百度[话题]# #昆仑芯[话题]# #infra[话题]# #面经[话题]# #一面[话题]# #二面[话题]#\n"
+    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n候选人背景：双 9 本硕、28 届研一，有一段小厂 Infra 实习经历，无论文。\n\n一面约 75 分钟：简历和基础问题 45 分钟，编程 25 分钟，反问 5 分钟。面试官深入询问实习，简略询问项目；候选人表示大部分基础问题答上了，但编程语言基础和手写代码表现不佳，记录了以下未答好的问题：\n\n1. Prefix Cache 融合算子融合了哪些内容？\n2. 是否了解 DSA？候选人看过但忘记了。\n3. vLLM 支持哪些投机解码方法？\n4. 是否看过 Triton 算子？候选人没有看过。\n5. 如何评估算子访存效率及计算能力发挥程度？\n6. `std::forward`、`move`、`enable_if` 各有什么作用？\n7. Python 的全局解释器锁是什么？\n8. RoPE 编码相对传统位置编码有什么优点？\n9. 编程：LeetCode 非 Hot 100 的中等难度题。\n\n二面约 40 分钟，没有基础题或手写代码，主要根据简历提问，并有看代码回答问题的环节。候选人表示面试后约一周收到口头 offer，推测横向比较耗时较长。\n\n候选人反馈：实习和基础知识基本达标，但代码能力仍有差距；认为手写代码仍是大厂常用筛选标准，Infra 的代码能力要求通常比算法方向更高，且以 C++ 为主。\n"
   },
   {
     "id": "xhs-6a700d7400000000350155ba",
@@ -414,13 +414,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "一面",
     "date": "2026-08-03",
-    "type": "图片待核对，正文待规范",
+    "type": "正文已整理 · 图片待核对",
     "source": "https://www.xiaohongshu.com/explore/6a700d7400000000350155ba",
     "tags": [
       "AI Infra"
     ],
     "source_title": "百度ai infra一面",
-    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n原帖正文（待进一步规范表达）：\n\n1.自我介绍\n2.实习\n介绍vllm ascend相关工作\n解释ring attention原理\n多长的文本是长文本\ndsv3.2支持多长文本的推理\nring attention通信点在哪 通信形式干成什么样了\nisend ireceive是tcp还是什么\ncpp是怎么做的 优化的是负载均衡吗 有什么数据吗\n收益是整个算完吗 还是某一部分的\ndcp的方案是什么\ndecode阶段计算强度不大 为什么还要做cp\n为什么不做ring attention\n异构mask是什么异构\n讲讲kvcache管理 是什么样设计模式\n如何测精度的\n是不是就是后端的几个memory统一管理了一下 由一个router\n会影响三级缓存吗\nlayout既影响三级缓存又影响pd分离 对于一个pd分离场景需要做哪些修改\n3.手撕\n二分查找\n4.反问\n问建议 没什么建议，挺好的 然后秒挂\n"
+    "body": "注意：原帖图片暂未完成核对，可能包含正文以外的问题。\n\n1. 自我介绍，介绍 vLLM Ascend 相关实习工作。\n2. 解释 Ring Attention 原理。多长的文本算长文本？DS V3.2 支持多长文本的推理？Ring Attention 的通信点在哪里，通信形式是什么？`isend` / `ireceive` 使用 TCP 还是其他方式？\n3. C++ 部分如何实现？优化的是负载均衡吗，有什么数据？收益针对整个计算过程还是其中一部分？\n4. DCP 的方案是什么？Decode 阶段计算强度不大，为什么还需要 CP？为什么不使用 Ring Attention？异构 mask 的“异构”体现在哪里？\n5. KV Cache 如何管理，使用什么设计模式？如何测试精度？是否由一个 router 统一管理后端的多个 memory？是否会影响三级缓存？\n6. Layout 同时影响三级缓存和 PD 分离，在 PD 分离场景中需要做哪些修改？\n7. 编程：二分查找。\n8. 反问：请求改进建议。面试官表示没有特别建议、表现不错，但候选人随后很快收到未通过结果。\n"
   },
   {
     "id": "xhs-6a92ecb70000000007004c9a",
@@ -429,13 +429,13 @@ const interviews = [
     "role": "AI Infra",
     "stage": "一面",
     "date": "2026-08-29",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6a92ecb70000000007004c9a",
     "tags": [
       "AI Infra"
     ],
     "source_title": "百度 ai infra 一面复盘",
-    "body": "原帖正文（待进一步规范表达）：\n\n这场不算单纯的算子面。开头从项目切入，后面不断往推理框架、CUDA Graph、确定性计算、量化和 RL Infra 延伸，整体更像在验证：项目是不是自己做过，底层链路能不能讲清楚。\n\t\n主要被问了这些：\n\t\nMoE Router Replay 到底怎么接进 RL 流程。 不只问“为什么能降低推训不一致”，还会追 rollout 端的 Top-K 路由信息怎么记录、怎么随数据传给训练侧、CPU/GPU 之间如何搬运。\n\t\nvLLM 的整体结构。 从请求进来，到 scheduler、engine、worker、model runner，再到下层算子和通信，数据流、控制流分别怎么走。\n\t\nTP + CUDA Graph 的卡死问题。 会问怎么从大规模问题缩到 TP=1 / TP>1 的对比，为什么 Graph 只是触发条件，真正的问题可能出在被替换的融合通信路径；还会继续问 capture / replay 的约束，例如 kernel、shape、地址等哪些必须稳定。\n\t\n确定性 Router GEMM。 为什么 Split-K 会导致结果不完全一致，固定配置为什么会在 Decode 的小 M 场景浪费资源，动态选配置和回退路径如何设计。\n\t\nDecode 侧的融合算子、量化和模型结构。 包括 CPU/GPU 来回同步怎么减少、W4A16 / AWQ / QAT、MHA / GQA，以及 RL 框架本身的理解。\n\t\n这场最直接的收获是：项目结果能讲，不代表项目就能扛住深挖。\n\t\n后面我最该补的其实就三件事：\n\t\n把 vLLM 从请求到 kernel 的全链路重新走一遍；\n把 CUDA Graph 的捕获、显存和 replay 约束讲清楚；\n把量化、Attention 和 Router GEMM 的收益拆开，不再把多个优化的总结果混成一个数字。\n#面经[话题]# #百度[话题]# #aiinfra[话题]# #AIInfra[话题]# #27届秋招[话题]# #面试复盘[话题]#\n"
+    "body": "本场从项目切入，延伸到推理框架、CUDA Graph、确定性计算、量化和 RL Infra。\n\n1. MoE Router Replay 如何接入 RL 流程？为什么能降低训推不一致？rollout 端的 Top-K 路由信息如何记录、如何随数据传给训练侧、如何在 CPU / GPU 之间搬运？\n2. vLLM 的整体结构：从请求进入到 scheduler、engine、worker、model runner，再到下层算子和通信，数据流和控制流分别如何运行？\n3. TP + CUDA Graph 卡死问题：如何从大规模问题缩小到 TP=1 / TP>1 的对比？为什么 Graph 可能只是触发条件，真正的问题可能出在被替换的融合通信路径？capture / replay 有哪些约束，例如 kernel、shape 和地址中哪些必须稳定？\n4. 确定性 Router GEMM：为什么 Split-K 会导致结果不完全一致？为什么固定配置在 Decode 的小 M 场景下浪费资源？如何设计动态选配置及回退路径？\n5. Decode 融合算子、量化和模型结构：如何减少 CPU / GPU 往返同步？介绍 W4A16、AWQ、QAT、MHA、GQA，以及对 RL 框架的理解。\n\n候选人反馈：项目结果能够讲述，并不代表能够应对深入追问。计划重新梳理 vLLM 从请求到 kernel 的全链路，讲清 CUDA Graph 的捕获、显存及 replay 约束，并区分量化、Attention 和 Router GEMM 各自的收益，避免把多个优化的总收益混为一个数字。\n"
   },
   {
     "id": "xhs-6abf5b2f0000000015011d00",
@@ -444,12 +444,12 @@ const interviews = [
     "role": "AI Infra",
     "stage": "一面",
     "date": "2026-10-02",
-    "type": "图片已核对，正文待规范",
+    "type": "正文已整理 · 图片已核对",
     "source": "https://www.xiaohongshu.com/explore/6abf5b2f0000000015011d00",
     "tags": [
       "AI Infra"
     ],
     "source_title": "百度ai infra一面",
-    "body": "原帖正文（待进一步规范表达）：\n\n* DiT / 视频生成和 LLM 推理的优化重点有什么区别？\n* DiT 更像超长 Prefill，长 sequence + 多 step，重点偏计算 / Attention 优化\n* LLM 还有 Decode，涉及 KV Cache，调度等更多系统问题\n* TP / SP / CP / EP 分别怎么切，通信开销是什么？\n* TP：tp / tpsp\n* Ulysses SP：核心是 All-to-All，通信少\n* Ring CP：KV 分片并沿 Ring 通信\n* EP：核心是 dispatch / combine\n* Prefill CP 和 Decode CP 有什么区别？\n* Prefill：可以 Ring 传 KV，边通信边计算\n* Decode：历史 KV 很大，更适合保持 KV 分片、通信小得多的 Q\n* Prefill / Decode 的特点和优化方向？\n* Prefill：偏 compute-bound\n* Decode：偏 memory-bound，重点包括KV Cache、调度等\n* PagedAttention 解决什么问题？\n* KV Cache 分页管理，减少内存碎\n* Prefix Cache 是什么？\n* 命中相同 prefix 时复用已有 KV Cache，减少重复 Prefill 计算\n* 量化的收益有哪些？\n* 提高 Tensor Core 计算吞吐\n* 减少 memory traffic\n* 降低显存占用，从而支持更长 context / 更大 batch\n* NVFP4 / MXFP4 / block-wise FP8 有什么区别？\n* 主要关注数据格式、group size / block size、scale 格式和两级量化\n* Roofline Model 怎么分析 Kernel？\n* Arithmetic Intensity 对比硬件 ridge point，判断 memory-bound / compute-bound\n* HBM / Shared Memory 访存分别要注意什么？\n"
+    "body": "1. DiT / 视频生成和 LLM 推理的优化重点有什么区别？\n   - 候选人记录：DiT 更像超长 Prefill，sequence 长、step 多，重点偏向计算和 Attention 优化；LLM 还有 Decode，涉及 KV Cache 和调度等系统问题。\n2. TP、SP、CP、EP 分别如何切分，通信开销是什么？\n   - 候选人记录：TP 为 tp / tpsp；Ulysses SP 以 All-to-All 为核心，通信较少；Ring CP 将 KV 分片并沿 Ring 通信；EP 以 dispatch / combine 为核心。\n3. Prefill CP 和 Decode CP 有什么区别？\n   - 候选人记录：Prefill 可以 Ring 传递 KV，边通信边计算；Decode 的历史 KV 很大，更适合保持 KV 分片并通信小得多的 Q。\n4. Prefill 和 Decode 的特点及优化方向是什么？\n   - 候选人记录：Prefill 偏 compute-bound；Decode 偏 memory-bound，重点包括 KV Cache 和调度。\n5. PagedAttention 解决什么问题？\n   - 候选人记录：分页管理 KV Cache，减少内存碎片。\n6. Prefix Cache 是什么？\n   - 候选人记录：命中相同 prefix 时复用已有 KV Cache，减少重复 Prefill 计算。\n7. 量化有哪些收益？\n   - 候选人记录：提高 Tensor Core 计算吞吐，减少 memory traffic，降低显存占用，从而支持更长 context 或更大 batch。\n8. NVFP4、MXFP4、block-wise FP8 有什么区别？\n   - 候选人记录：关注数据格式、group size / block size、scale 格式和两级量化。\n9. 如何使用 Roofline Model 分析 kernel？\n   - 候选人记录：将 arithmetic intensity 与硬件 ridge point 对比，判断 memory-bound 或 compute-bound。\n10. HBM 和 shared memory 的访存分别需要注意什么？\n"
   }
 ];
